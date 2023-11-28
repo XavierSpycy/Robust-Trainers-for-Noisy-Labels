@@ -94,98 +94,89 @@ According to the the loss trends, we find that our robust trainers may also act 
 </p>
 
 ### Performance
-We conduct experiments with 10 different random seeds on `ForwardLossCorrection` and `CoTeaching`. Here is their performance comparison.
+We have conducted a series of experiments utilizing 10 distinct random seeds to evaluate the performance of `ForwardLossCorrection` and `CoTeaching`. Below is a detailed comparison of their performances.
 
-<style>
-    table, th, td {
-        border: 1px solid black;
-        text-align: center;
-    }
-</style>
 <div align="center">
 <table>
-    <h3>Peformance Comparison</h3>
-    <thead>
-        <tr>
-            <th rowspan="2">Dataset</th>
-            <th rowspan="2">Metrics</th>
-            <th colspan="2">Robust Trainer</th>
-        </tr>
-        <tr>
-            <th>ForwardLossCorrection</th>
-            <th>CoTeaching</th>
-        </tr>
-    </thead>
-    <tbody>
+    <h4>Peformance Comparison</h4>
     <tr>
-        <td rowspan="4">FashionMNIST0.5</td>
-        <td>Accuracy</td>
-        <td>77.47%(&plusmn; 6.33%)</td>
-        <td>90.33%(&plusmn; 3.34%)</td>
+        <td rowspan="2" align='center'>Dataset</td>
+        <td rowspan="2">Metrics</td>
+        <td colspan="2" align='center'>Robust Trainer</td>
     </tr>
     <tr>
-        <td>Precision</td>
-        <td>78.87%(&plusmn; 5.75%)</td>
-        <td>90.93%(&plusmn; 2.49%)</td>
+        <td align='center'>ForwardLossCorrection</td>
+        <td align='center'>CoTeaching</td>
     </tr>
     <tr>
-        <td>Recall</td>
-        <td>77.47%(&plusmn; 6.33%)</td>
-        <td>90.33%(&plusmn; 3.34%)</td>
+        <td rowspan="4" align='center'>FashionMNIST0.5</td>
+        <td align='center'>Accuracy</td>
+        <td align='center'>77.47%(&plusmn; 6.33%)</td>
+        <td align='center'>90.33%(&plusmn; 3.34%)</td>
     </tr>
     <tr>
-        <td>F1 Score</td>
-        <td>77.53%(&plusmn; 6.54%)</td>
-        <td>90.29%(&plusmn; 3.46%)</td>
+        <td align='center'>Precision</td>
+        <td align='center'>78.87%(&plusmn; 5.75%)</td>
+        <td align='center'>90.93%(&plusmn; 2.49%)</td>
     </tr>
     <tr>
-        <td rowspan="4">FashionMNIST0.6</td>
-        <td>Accuracy</td>
-        <td>77.05%(&plusmn; 6.61%)</td>
-        <td>80.25%(&plusmn; 12.44%)</td>
+        <td align='center'>Recall</td>
+        <td align='center'>77.47%(&plusmn; 6.33%)</td>
+        <td align='center'>90.33%(&plusmn; 3.34%)</td>
     </tr>
     <tr>
-        <td>Precision</td>
-        <td>80.08%(&plusmn; 3.64%)</td>
-        <td>75.28%(&plusmn; 20.81%)</td>
+        <td align='center'>F1 Score</td>
+        <td align='center'>77.53%(&plusmn; 6.54%)</td>
+        <td align='center'>90.29%(&plusmn; 3.46%)</td>
     </tr>
     <tr>
-        <td>Recall</td>
-        <td>77.05%(&plusmn; 6.61%)</td>
-        <td>80.25%(&plusmn; 12.44%)</td>
+        <td rowspan="4" align='center'>FashionMNIST0.6</td>
+        <td align='center'>Accuracy</td>
+        <td align='center'>77.05%(&plusmn; 6.61%)</td>
+        <td align='center'>80.25%(&plusmn; 12.44%)</td>
     </tr>
     <tr>
-        <td>F1 Score</td>
-        <td>76.27%(&plusmn; 8.55%)</td>
-        <td>76.92%(&plusmn; 17.83%)</td>
+        <td align='center'>Precision</td>
+        <td align='center'>80.08%(&plusmn; 3.64%)</td>
+        <td align='center'>75.28%(&plusmn; 20.81%)</td>
     </tr>
     <tr>
-        <td rowspan="4">CIFAR</td>
-        <td>Accuracy</td>
-        <td>49.81%(&plusmn; 12.58%)</td>
-        <td>47.28%(&plusmn; 4.09%)</td>
+        <td align='center'>Recall</td>
+        <td align='center'>77.05%(&plusmn; 6.61%)</td>
+        <td align='center'>80.25%(&plusmn; 12.44%)</td>
     </tr>
     <tr>
-        <td>Precision</td>
-        <td>50.11%(&plusmn; 12.06%)</td>
-        <td>33.41%(&plusmn; 3.73%)</td>
+        <td align='center'>F1 Score</td>
+        <td align='center'>76.27%(&plusmn; 8.55%)</td>
+        <td align='center'>76.92%(&plusmn; 17.83%)</td>
     </tr>
     <tr>
-        <td>Recall</td>
-        <td>49.81%(&plusmn; 12.58%)</td>
-        <td>47.28%(&plusmn; 4.09%)</td>
+        <td rowspan="4" align='center'>CIFAR</td>
+        <td align='center'>Accuracy</td>
+        <td align='center'>49.81%(&plusmn; 12.58%)</td>
+        <td align='center'>47.28%(&plusmn; 4.09%)</td>
     </tr>
     <tr>
-        <td>F1 Score</td>
-        <td>49.09%(&plusmn; 12.27%)</td>
-        <td>38.04%(&plusmn; 3.69%)</td>
+        <td align='center'>Precision</td>
+        <td align='center'>50.11%(&plusmn; 12.06%)</td>
+        <td align='center'>33.41%(&plusmn; 3.73%)</td>
+    </tr>
+    <tr>
+        <td align='center'>Recall</td>
+        <td align='center'>49.81%(&plusmn; 12.58%)</td>
+        <td align='center'>47.28%(&plusmn; 4.09%)</td>
+    </tr>
+    <tr>
+        <td align='center'>F1 Score</td>
+        <td align='center'>49.09%(&plusmn; 12.27%)</td>
+        <td align='center'>38.04%(&plusmn; 3.69%)</td>
     </tr>
     </table>
 </div>
 
-Obviously, when the noise level is low, `CoTeaching` works better, while when the noise level increases `ForwardLossCorrection` will be more robust compared to `CoTeaching`.
+It becomes evident from our analysis that `CoTeaching` exhibits superior performance under conditions of low noise. However, as the noise level escalates, `ForwardLossCorrection` demonstrates enhanced robustness, outperforming `CoTeaching`.
 
-In our initial experiments, both `JoCoR` and `O2UNet` work well on `FashionMNIST0.5`. However, given computational complexities and insignificant improvements compared to `CoTeaching`, we did not conduct full experiments on them
+In our preliminary experiments, both `JoCoR` and `O2UNet` showed promising results on the FashionMNIST0.5 dataset. Nevertheless, due to the substantial computational demands and the marginal improvements they offered over `CoTeaching`, we decided not to proceed with extensive experimentation on these methods.
 
 ### Estimation of Transition Matrix
 - Estimation on FashionMNIST05
